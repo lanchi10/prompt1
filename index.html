@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאסטר הפרומפטים - המדריך הסופי לכתיבת הנחיות AI מושלמות</title>
+    <title>מאסטר הפרומפטים - פרק א': המדריך הסופי לכתיבת הנחיות AI מושלמות</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -130,9 +131,83 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(66, 153, 225, 0.3);
         }
+
+        .nav-bar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+        
+        .nav-link.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .lanchi-logo {
+            height: 40px;
+            width: auto;
+        }
+        
+        .footer-nav {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+        }
+        
+        .nav-icon {
+            font-size: 1.2rem;
+            margin-left: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .nav-link {
+                padding: 0.5rem 1rem;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="nav-bar sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/22_generated/3c1fc5ac-8855-4c3d-a9d0-a082d92e013d" alt="LANCHI Logo" class="lanchi-logo">
+                    <div class="text-white font-bold text-lg">LANCHI</div>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="nav-links flex space-x-2 space-x-reverse">
+                    <a href="https://prompt10.netlify.app/" class="nav-link active text-white px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20">
+                        <i class="fas fa-home nav-icon"></i>
+                        פרק א': היסודות
+                    </a>
+                    <a href="https://prompt20.netlify.app/" class="nav-link text-white px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20">
+                        <i class="fas fa-flask nav-icon"></i>
+                        פרק ב': המעבדה
+                    </a>
+                    <a href="https://prompt30.netlify.app/" class="nav-link text-white px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20">
+                        <i class="fas fa-magic nav-icon"></i>
+                        פרק ג': המחולל
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header Section -->
     <header class="gradient-bg text-white py-20 px-4">
         <div class="max-w-6xl mx-auto text-center">
@@ -833,36 +908,74 @@
         </div>
     </section>
 
-    <!-- Final Call to Action -->
-    <footer class="gradient-bg text-white py-16 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">מוכן להפוך למאסטר פרומפטים?</h2>
-            <p class="text-xl mb-8 opacity-90">עכשיו יש לך את כל הכלים לכתיבת פרומפטים שיהפכו את ה-AI לנשק הסודי שלך</p>
-            
-            <div class="bg-white bg-opacity-10 rounded-2xl p-8 mb-8">
-                <h3 class="text-2xl font-bold mb-4">תזכורת: הנוסחה הזהב</h3>
-                <div class="text-lg">
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">תפקיד</span> +
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">הקשר</span> +
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">משימה</span> +
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">פורמט</span> +
-                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">דוגמאות</span>
-                    = <span class="text-yellow-300 font-bold">הצלחה מובטחת!</span>
+    <!-- Navigation Footer -->
+    <footer class="footer-nav text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Main Navigation -->
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition-all duration-300">
+                        <i class="fas fa-home text-3xl text-blue-300 mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">פרק א': היסודות</h3>
+                        <p class="text-gray-300 text-sm mb-4">המדריך הבסיסי לכתיבת פרומפטים</p>
+                        <a href="https://prompt10.netlify.app/" class="text-blue-300 hover:text-blue-200">
+                            <i class="fas fa-arrow-left ml-1"></i>
+                            אתה כאן
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition-all duration-300">
+                        <i class="fas fa-flask text-3xl text-green-300 mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">פרק ב': המעבדה</h3>
+                        <p class="text-gray-300 text-sm mb-4">כלים מתקדמים ותחנות עבודה</p>
+                        <a href="https://prompt20.netlify.app/" class="text-green-300 hover:text-green-200">
+                            <i class="fas fa-arrow-left ml-1"></i>
+                            המשך למעבדה
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition-all duration-300">
+                        <i class="fas fa-magic text-3xl text-purple-300 mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">פרק ג': המחולל</h3>
+                        <p class="text-gray-300 text-sm mb-4">מחולל פרומפטים אינטראקטיבי</p>
+                        <a href="https://prompt30.netlify.app/" class="text-purple-300 hover:text-purple-200">
+                            <i class="fas fa-arrow-left ml-1"></i>
+                            למחולל המתקדם
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-10 rounded-xl p-6 hover:bg-opacity-20 transition-all duration-300">
+                        <i class="fas fa-star text-3xl text-yellow-300 mb-3"></i>
+                        <h3 class="font-bold text-lg mb-2">משאבים נוספים</h3>
+                        <p class="text-gray-300 text-sm mb-4">כלים וגישה מהירה</p>
+                        <div class="text-yellow-300">
+                            <i class="fas fa-external-link-alt ml-1"></i>
+                            ראה למעלה
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="text-lg opacity-90">
-                <p class="mb-4">
-                    <i class="fas fa-star text-yellow-300 ml-2"></i>
-                    התחל לתרגל עם הטכניקות שלמדת היום
+            <!-- Brand and Credits -->
+            <div class="border-t border-gray-600 pt-8 text-center">
+                <div class="flex justify-center items-center space-x-4 space-x-reverse mb-4">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/22_generated/3c1fc5ac-8855-4c3d-a9d0-a082d92e013d" alt="LANCHI Logo" class="h-10 w-auto">
+                    <div>
+                        <div class="text-xl font-bold">LANCHI</div>
+                        <div class="text-sm text-gray-400">מאסטר הפרומפטים</div>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    נוצר ע"י LANCHI מלנצי לטובת שימוש בני המשפחה והחברים
                 </p>
-                <p class="mb-4">
-                    <i class="fas fa-rocket text-yellow-300 ml-2"></i>
-                    נסה את הפרומפט הקסום לפתרון בעיות
-                </p>
-                <p>
-                    <i class="fas fa-trophy text-yellow-300 ml-2"></i>
-                    תהפוך למומחה תוך שבועיים!
+                <p class="text-gray-500 text-xs mt-2">
+                    © 2024 כל הזכויות שמורות | עיצוב ופיתוח: LANCHI
                 </p>
             </div>
         </div>
@@ -1005,3 +1118,12 @@
     </script>
 </body>
 </html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDjjPwh1H72yE4%2F4pQp2M072CiJCX1K0KHtNdkRPaAmaaHtjvYKJ0wiMnfMrWQQqlB7%2BSX11KCecMP82ynm06i%2Fs9WuXdeElGKEXHBC%2F6jCuQ9pht3nXEkz9%2FsSc6oOZ2LUug0kI9uW8cCgRaSkaivi1oiaVeF7YKLdf8lm0b92PIOzHsl5AX99f0Qmwj7%2Fs4eYZiLFwbvF63iW3ovqPj91p%2FX5jxQIWlC1GmbzBN7fnCal9BysKUIMm0ARx7eUkPW6SS9RtGBGBiWd2KBU6wASfl63auDs6e7B2WveWyAH93Nevawu2oRCDR8N4lq9eYcjbf31xEJ5bVtWobPN4sjiStwJ2jSWKDR12ZqlrzgHTHXfLiiTxM%2B2%2F6HSAXTP86iISHprFDe%2FjG5r2DdcuGF%2FVnOk65FSruQr34lS%2BelxD6SH3d%2Fyx0sx9xG4jcmFZalwlNxrD4j4EinXUjub%2BBc3DjBphEyawx1gngGyJr1vdhHEoGk8VFduJwAVYfhALr3EkNB3JFSYxFFh6Zr%2BVxeoc%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDjjPwh1H72yE4/4pQp2M072CiJCX1K0KHtNdkRPaAmaaHtjvYKJ0wiMnfMrWQQqlB7+SX11KCecMP82ynm06i/s9WuXdeElGKEXHBC/6jCuQ9pht3nXEkz9/sSc6oOZ2LUug0kI9uW8cCgRaSkaivi1oiaVeF7YKLdf8lm0b92PIOzHsl5AX99f0Qmwj7/s4eYZiLFwbvF63iW3ovqPj91p/X5jxQIWlC1GmbzBN7fnCal9BysKUIMm0ARx7eUkPW6SS9RtGBGBiWd2KBU6wASfl63auDs6e7B2WveWyAH93Nevawu2oRCDR8N4lq9eYcjbf31xEJ5bVtWobPN4sjiStwJ2jSWKDR12ZqlrzgHTHXfLiiTxM+2/6HSAXTP86iISHprFDe/jG5r2DdcuGF/VnOk65FSruQr34lS+elxD6SH3d/yx0sx9xG4jcmFZalwlNxrD4j4EinXUjub+Bc3DjBphEyawx1gngGyJr1vdhHEoGk8VFduJwAVYfhALr3EkNB3JFSYxFFh6Zr+Vxeoc=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
