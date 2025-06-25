@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מאסטר הפרומפטים - המדריך הסופי לכתיבת הנחיות AI מושלמות</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-left: .15em solid #667eea;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #667eea; }
+        }
+        
+        .chat-message {
+            animation: fadeInUp 0.5s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .demo-container {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .bonus-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+        }
+        
+        .copy-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .copy-success {
+            animation: copySuccess 0.5s ease-in-out;
+        }
+        
+        @keyframes copySuccess {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); background: #10b981; }
+            100% { transform: scale(1); }
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .floating-element {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, -10px); }
+            100% { transform: translate(0, 0px); }
+        }
+        
+        .additional-resources {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+        }
+        
+        .resource-link {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .resource-link:hover {
+            border-color: #4299e1;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(66, 153, 225, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="floating-element mb-8">
+                <i class="fas fa-robot text-6xl mb-4 text-yellow-300"></i>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 typewriter">
+                מאסטר הפרומפטים
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                המדריך הסופי לכתיבת הנחיות AI מושלמות שיהפכו אותך למומחה
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                    <i class="fas fa-magic ml-2"></i>
+                    טכניקות מתקדמות
+                </span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                    <i class="fas fa-lightbulb ml-2"></i>
+                    דוגמאות מעשיות
+                </span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                    <i class="fas fa-play-circle ml-2"></i>
+                    דמו אינטראקטיבי
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8 hover-scale">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-bold gradient-text mb-4">למה פרומפטים חשובים?</h2>
+                    <p class="text-gray-600 text-lg">הבינה המלאכותית היא כמו כלי עבודה מתקדם - הכל תלוי במי שמשתמש בו</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-red-100 p-3 rounded-full">
+                                <i class="fas fa-times text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-red-600 mb-2">פרומפט רע</h3>
+                                <p class="text-gray-600">"כתב לי משהו על שיווק"</p>
+                                <p class="text-sm text-gray-500 mt-2">תקבל תשובה כללית ולא מועילה</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-green-100 p-3 rounded-full">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-green-600 mb-2">פרומפט מושלם</h3>
+                                <p class="text-gray-600">"אתה מומחה שיווק דיגיטלי. כתב לי אסטרטגיית שיווק ל-startup בתחום הבריאות הדיגיטלית, עם תקציב של 50,000 ש"ח לחודש, שמתמקד במגזר החרדי. כלול מדדי הצלחה ולוח זמנים."</p>
+                                <p class="text-sm text-gray-500 mt-2">תקבל תשובה מדויקת ומותאמת אישית</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl">
+                        <h3 class="font-bold text-lg mb-4 text-center">הסטטיסטיקות מדברות בעד עצמן:</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span>פרומפט מדויק</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-gray-200 rounded-full h-2 ml-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                    <span class="text-sm font-bold">90%</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>פרומפט כללי</span>
+                                <div class="flex items-center">
+                                    <div class="w-24 bg-gray-200 rounded-full h-2 ml-2">
+                                        <div class="bg-red-500 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                    <span class="text-sm font-bold">30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Techniques Section -->
+    <section class="py-16 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center gradient-text mb-12">הטכניקות המתקדמות של מאסטרי הפרומפטים</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Chain of Thought -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-link text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Chain of Thought</h3>
+                    <p class="text-gray-600 mb-4">בקש מה-AI לחשוב צעד אחר צעד</p>
+                    <div class="bg-gray-50 p-3 rounded-lg text-sm">
+                        <strong>דוגמה:</strong><br>
+                        "חשב צעד אחר צעד כיצד לפתור את הבעיה הזו..."
+                    </div>
+                </div>
+                
+                <!-- Role Playing -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mask text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">משחק תפקידים</h3>
+                    <p class="text-gray-600 mb-4">תן ל-AI תפקיד מומחה</p>
+                    <div class="bg-gray-50 p-3 rounded-lg text-sm">
+                        <strong>דוגמה:</strong><br>
+                        "אתה עורך דין מומחה בדיני עבודה עם 20 שנות ניסיון..."
+                    </div>
+                </div>
+                
+                <!-- Few-Shot Learning -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Few-Shot Learning</h3>
+                    <p class="text-gray-600 mb-4">תן דוגמאות למה שאתה רוצה</p>
+                    <div class="bg-gray-50 p-3 rounded-lg text-sm">
+                        <strong>דוגמה:</strong><br>
+                        "דוגמה 1: ... דוגמה 2: ... עכשיו עשה את אותו הדבר עבור..."
+                    </div>
+                </div>
+                
+                <!-- System Instructions -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cog text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">הנחיות מערכת</h3>
+                    <p class="text-gray-600 mb-4">הגדר כללים ומגבלות ברורות</p>
+                    <div class="bg-gray-50 p-3 rounded-lg text-sm">
+                        <strong>דוגמה:</strong><br>
+                        "תמיד תשיב בעברית, בפסקאות קצרות, ללא מילים באנגלית"
+                    </div>
+                </div>
+                
+                <!-- Context Setting -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-yellow-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-context-menu text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">הקשר מפורט</h3>
+                    <p class="text-gray-600 mb-4">ספק רקע וחשיבות למטלה</p>
+                    <div class="bg-gray-50 p-3 rounded-lg text-sm">
+                        <strong>דוגמה:</strong><br>
+                        "זה למצגת חשובה מול המנכ"ל, התקציב הוא..."
+                    </div>
+                </div>
+                
+                <!-- Iterative Refinement -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-sync text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">שיפור איטרטיבי</h3>
+                    <p class="text-gray-600 mb-4">בנה על התשובה הקודמת</p>
+                    <div class="bg-gray-50 p-3 rounded-lg text-sm">
+                        <strong>דוגמה:</strong><br>
+                        "עכשיו הפוך את זה יותר פורמלי ותוסיף נתונים..."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formula Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8 glow-effect">
+                <h2 class="text-4xl font-bold text-center gradient-text mb-8">הנוסחה הזהב לפרומפט מושלם</h2>
+                
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl border-r-4 border-blue-500">
+                    <div class="text-2xl font-bold text-center mb-6">
+                        תפקיד + הקשר + משימה + פורמט + דוגמאות = <span class="gradient-text">פרומפט מושלם</span>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-5 gap-4 mt-8">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-user-tie text-white"></i>
+                            </div>
+                            <div class="font-bold text-sm">תפקיד</div>
+                            <div class="text-xs text-gray-600">מי ה-AI?</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-info-circle text-white"></i>
+                            </div>
+                            <div class="font-bold text-sm">הקשר</div>
+                            <div class="text-xs text-gray-600">למה זה חשוב?</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-tasks text-white"></i>
+                            </div>
+                            <div class="font-bold text-sm">משימה</div>
+                            <div class="text-xs text-gray-600">מה לעשות?</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-clipboard-list text-white"></i>
+                            </div>
+                            <div class="font-bold text-sm">פורמט</div>
+                            <div class="text-xs text-gray-600">איך להציג?</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-lightbulb text-white"></i>
+                            </div>
+                            <div class="font-bold text-sm">דוגמאות</div>
+                            <div class="text-xs text-gray-600">הדגמה</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUS Section - Problem Solving Prompt -->
+    <section class="py-16 px-4 bonus-section">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-white px-6 py-3 rounded-full shadow-lg mb-4">
+                    <span class="text-2xl">🎁</span>
+                    <span class="font-bold text-xl mr-2">בונוס מיוחד!</span>
+                </div>
+                <h2 class="text-4xl font-bold text-white mb-4">הפרומפט הקסום לפתרון בעיות</h2>
+                <p class="text-xl text-white opacity-90">הפרומפט שיהפוך את ה-AI לכלי פתרון בעיות מקצועי</p>
+            </div>
+
+            <!-- The Magic Prompt Display -->
+            <div class="bg-white rounded-2xl shadow-2xl p-8 mb-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold gradient-text">
+                        <i class="fas fa-magic ml-2"></i>
+                        הפרומפט הקסום
+                    </h3>
+                    <button onclick="copyPrompt()" class="copy-btn bg-gray-100 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-lg transition-all duration-300">
+                        <i class="fas fa-copy ml-1"></i>
+                        העתק
+                    </button>
+                </div>
+                
+                <div id="magic-prompt" class="bg-gray-50 p-6 rounded-xl border-r-4 border-blue-500 font-mono text-sm leading-relaxed">
+                    אתה יועץ פתרון בעיות מקצועי. התפקיד שלך הוא לעזור לי לפתור בעיות בצורה שיטתית ויעילה.<br><br>
+
+                    כשאני אציג לך בעיה, תבצע את השלבים הבאים:<br><br>
+
+                    1. **הבנת הבעיה**: שאל שאלות מבהירות כדי להבין את הבעיה לעומק<br>
+                    2. **אבחון השורש**: זהה את הגורמים האמיתיים לבעיה<br>
+                    3. **גיבוש פתרונות**: הצע מספר חלופות פתרון<br>
+                    4. **הערכת פתרונות**: נתח יתרונות וחסרונות של כל פתרון<br>
+                    5. **המלצה**: המלץ על הפתרון הטוב ביותר עם תוכנית יישום<br><br>
+
+                    חשוב: תמיד שאל שאלות לפני שאתה מציע פתרונות. אל תניח הנחות.<br><br>
+
+                    אם אתה מוכן, אמר "מוכן לעזור לך לפתור בעיות! איזו בעיה מעסיקה אותך?"
+                </div>
+            </div>
+
+            <!-- Live Demo -->
+            <div class="bg-white rounded-2xl shadow-2xl p-8 mb-8">
+                <h3 class="text-2xl font-bold gradient-text mb-6">
+                    <i class="fas fa-play-circle ml-2"></i>
+                    דמו אינטראקטיבי
+                </h3>
+                
+                <div class="demo-container rounded-xl p-6">
+                    <div id="chat-container" class="space-y-4 mb-4 max-h-96 overflow-y-auto">
+                        <!-- Initial AI message -->
+                        <div class="flex items-start space-x-3 space-x-reverse chat-message">
+                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-robot text-white text-sm"></i>
+                            </div>
+                            <div class="bg-blue-100 p-3 rounded-lg max-w-md">
+                                <p class="text-sm">מוכן לעזור לך לפתור בעיות! איזו בעיה מעסיקה אותך?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2 space-x-reverse">
+                        <input type="text" id="user-input" placeholder="כתב כאן את הבעיה שלך..." 
+                               class="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button onclick="sendMessage()" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <button onclick="quickDemo('עובד חדש לא מתקדם מהר מספיק')" 
+                                class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-full text-sm transition-colors">
+                            דוגמה: עובד חדש לא מתקדם מהר מספיק
+                        </button>
+                        <button onclick="quickDemo('לקוחות מתלונים על זמני המתנה')" 
+                                class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-full text-sm transition-colors">
+                            דוגמה: לקוחות מתלונים על זמני המתנה  
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Conversation -->
+            <div class="bg-white rounded-2xl shadow-2xl p-8 mb-8">
+                <h3 class="text-2xl font-bold gradient-text mb-6">
+                    <i class="fas fa-comments ml-2"></i>  
+                    דוגמה מעשית לשיחה
+                </h3>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3 space-x-reverse">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white text-sm"></i>
+                        </div>
+                        <div class="bg-green-100 p-4 rounded-lg max-w-2xl">
+                            <p class="font-medium">המשתמש:</p>
+                            <p class="text-gray-700">היי, יש לי בעיה בעבודה. העובד החדש לא מתקדם מהר מספיק ואני לא יודע מה לעשות.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-3 space-x-reverse">
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-white text-sm"></i>
+                        </div>
+                        <div class="bg-blue-100 p-4 rounded-lg max-w-2xl">
+                            <p class="font-medium">AI (עם הפרומפט):</p>
+                            <p class="text-gray-700">אני רוצה לעזור לך לפתור את הבעיה הזו בצורה שיטתית. בואו נתחיל בהבנת המצב:</p>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                                <li>כמה זמן העובד עובד אצלכם?</li>
+                                <li>מה התחומים הספציפיים בהם הוא לא מתקדם מהר מספיק?</li>
+                                <li>מה הציפיות שלך לגבי זמני למידה?</li>
+                                <li>איך אתה מודד את ההתקדמות שלו?</li>
+                                <li>האם קיבל הדרכה מתאימה?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg border-r-4 border-yellow-400">
+                        <p class="font-bold text-yellow-800">שים לב להבדל!</p>
+                        <p class="text-yellow-700 mt-1">במקום לקבל עצות כלליות, ה-AI שואל שאלות מובנות כדי להבין את הבעיה לעומק לפני שהוא מציע פתרונות.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why This Works -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-search text-blue-600"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">אבחון לפני טיפול</h4>
+                    <p class="text-gray-600 text-sm">ה-AI לומד לשאול שאלות נכונות במקום לקפוץ למסקנות</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-list-ol text-green-600"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">תהליך שיטתי</h4>
+                    <p class="text-gray-600 text-sm">כל בעיה מקבלת טיפול מובנה ומקצועי</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-purple-600"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">שיתוף פעולה</h4>
+                    <p class="text-gray-600 text-sm">ה-AI עובד איתך, לא בשבילך</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-target text-red-600"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">פתרונות מותאמים</h4>
+                    <p class="text-gray-600 text-sm">כל פתרון מותאם למצב הספציפי שלך</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Examples Section -->
+    <section class="py-16 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center gradient-text mb-12">דוגמאות מהחיים האמיתיים</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Business Example -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center ml-3">
+                            <i class="fas fa-briefcase text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">תחום עסקי</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-300">
+                            <h4 class="font-bold text-red-700 mb-2">❌ פרומפט רע:</h4>
+                            <p class="text-gray-700">"תכתב לי תוכנית עסקית"</p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-300">
+                            <h4 class="font-bold text-green-700 mb-2">✅ פרומפט מושלם:</h4>
+                            <p class="text-gray-700">"אתה יועץ עסקי בכיר עם התמחות בחברות טכנולוgiה. כתב תוכנית עסקית לאפליקציית חינוך דיגיטלי שמיועדת לילדים גילאי 6-12, עם דגש על שוק ישראלי. התוכנית צריכה לכלול: ניתוח שוק, מודל הכנסות, אסטרטגיית שיווק, תחזית כספית ל-3 שנים. הציג את המידע בפורמט מקצועי שמתאים למצגת למשקיעים."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Creative Example -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 w-10 h-10 rounded-full flex items-center justify-center ml-3">
+                            <i class="fas fa-palette text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">תחום יצירתי</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-300">
+                            <h4 class="font-bold text-red-700 mb-2">❌ פרומפט רע:</h4>
+                            <p class="text-gray-700">"כתב לי סיפור"</p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-300">
+                            <h4 class="font-bold text-green-700 mb-2">✅ פרומפט מושלם:</h4>
+                            <p class="text-gray-700">"אתה סופר מקצועי המתמחה בספרות ילדים. כתב סיפור של 500 מילים לילדים בגילאי 5-8, על ילדה בשם נועה שמגלה גן חבוי ביער ופוגשת שם חיות שמדברות. הסיפור צריך להעביר מסר על חשיבות השמירה על הטבע. השתמש בשפה פשוטה וחמה, עם דיאלוגים קצרים. כלול תיאורים צבעוניים שיעוררו את הדמיון."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Example -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 w-10 h-10 rounded-full flex items-center justify-center ml-3">
+                            <i class="fas fa-code text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">תחום טכני</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-300">
+                            <h4 class="font-bold text-red-700 mb-2">❌ פרומפט רע:</h4>
+                            <p class="text-gray-700">"תכתב לי קוד"</p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-300">
+                            <h4 class="font-bold text-green-700 mb-2">✅ פרומפט מושלם:</h4>
+                            <p class="text-gray-700">"אתה מפתח Python מנוסה. כתב פונקציה שמחשבת את המחיר הסופי של מוצר לאחר הנחה ומע"ם. הפונקציה צריכה לקבל: מחיר בסיס, אחוז הנחה, אחוז מע"ם. הוסף בדיקות קלט, טיפול בשגיאות, והערות מפורטות. כתב גם 3 דוגמאות שימוש ובדיקות unit tests."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Educational Example -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 w-10 h-10 rounded-full flex items-center justify-center ml-3">
+                            <i class="fas fa-graduation-cap text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">תחום חינוכי</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-300">
+                            <h4 class="font-bold text-red-700 mb-2">❌ פרומפט רע:</h4>
+                            <p class="text-gray-700">"הסבר לי מתמטיקה"</p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-300">
+                            <h4 class="font-bold text-green-700 mb-2">✅ פרומפט מושלם:</h4>
+                            <p class="text-gray-700">"אתה מורה למתמטיקה מקצועי ומעולה בהסברה. הסבר לתלמיד כיתה ח' את הנושא 'משוואות מעלה ראשונה' בצורה פשוטה וברורה. השתמש בדוגמאות מהחיים, התחל מהבסיס, תן 3 דוגמאות פתורות צעד אחר צעד, ולסיום הכן תרגיל קל שהתלמיד יוכל לנסות לפתור בעצמו."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Tips Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center gradient-text mb-12">טיפים מתקדמים ששווים זהב</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <!-- Tip 1 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-lightbulb text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">1. השתמש בסימני פיסוק ויזואליים</h3>
+                                <p class="text-gray-600 mb-3">בלט חלקים חשובים בפרומפט עם **עובי**, *נטייה*, או CAPS</p>
+                                <div class="bg-gray-50 p-3 rounded text-sm">
+                                    <strong>דוגמה:</strong> "זה **חשוב מאוד** שהתשובה תהיה *מדויקת* ובאורך של 200 מילים בדיוק"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tip 2 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-green-100 p-3 rounded-full">
+                                <i class="fas fa-list text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">2. השתמש ברשימות מסודרות</h3>
+                                <p class="text-gray-600 mb-3">פרומפטים מאורגנים מקבלים תשובות טובות יותר</p>
+                                <div class="bg-gray-50 p-3 rounded text-sm">
+                                    <strong>דוגמה:</strong><br>
+                                    "אני רוצה שתכין:<br>
+                                    1. הקדמה של 100 מילים<br>
+                                    2. 3 נקודות עיקריות<br>
+                                    3. סיכום וקריאה לפעולה"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tip 3 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-purple-100 p-3 rounded-full">
+                                <i class="fas fa-question text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">3. תן לו לשאול שאלות</h3>
+                                <p class="text-gray-600 mb-3">עודד את ה-AI לבקש הבהרות במקום לנחש</p>
+                                <div class="bg-gray-50 p-3 rounded text-sm">
+                                    <strong>דוגמה:</strong> "אם משהו לא ברור, שאל אותי שאלות לפני שאתה מתחיל"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Tip 4 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-red-100 p-3 rounded-full">
+                                <i class="fas fa-ban text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">4. הגדר מה לא לעשות</h3>
+                                <p class="text-gray-600 mb-3">לפעמים חשוב יותר להגיד מה לא לכלול</p>
+                                <div class="bg-gray-50 p-3 rounded text-sm">
+                                    <strong>דוגמה:</strong> "אל תכלול מידע טכני מורכב ואל תשתמש בז'רגון מקצועי"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tip 5 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-yellow-100 p-3 rounded-full">
+                                <i class="fas fa-ruler text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">5. הגדר אורך מדויק</h3>
+                                <p class="text-gray-600 mb-3">תמיד ציין כמה מילים, פסקאות או עמודים אתה רוצה</p>
+                                <div class="bg-gray-50 p-3 rounded text-sm">
+                                    <strong>דוגמה:</strong> "כתב תשובה של בדיוק 300 מילים, מחולקת ל-3 פסקאות שוות"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tip 6 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-scale">
+                        <div class="flex items-start space-x-4 space-x-reverse">
+                            <div class="bg-indigo-100 p-3 rounded-full">
+                                <i class="fas fa-redo text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">6. בקש לבדוק ולתקן</h3>
+                                <p class="text-gray-600 mb-3">בסוף הפרומפט, בקש מה-AI לבדוק את עבודתו</p>
+                                <div class="bg-gray-50 p-3 rounded text-sm">
+                                    <strong>דוגמה:</strong> "לאחר שתסיים, בדוק שהתשובה עונה על כל הדרישות שציינתי"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Mistakes Section -->
+    <section class="py-16 px-4 bg-red-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-red-600 mb-12">הטעויות הכי נפוצות (שעולות יקר!)</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border-r-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-times-circle text-red-500 text-xl ml-3"></i>
+                        <h3 class="text-xl font-bold text-red-600">טעות #1: פרומפטים כלליים מדי</h3>
+                    </div>
+                    <p class="text-gray-700 mb-2"><strong>רע:</strong> "תעזור לי עם השיווק"</p>
+                    <p class="text-gray-700"><strong>טוב:</strong> "תכין לי אסטרטגיית שיווק דיגיטלי לחנות אופנה מקוונת במגזר החרדי"</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg border-r-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-times-circle text-red-500 text-xl ml-3"></i>
+                        <h3 class="text-xl font-bold text-red-600">טעות #2: לא לציין פורמט</h3>
+                    </div>
+                    <p class="text-gray-700 mb-2"><strong>רע:</strong> "תסביר לי על השקעות"</p>
+                    <p class="text-gray-700"><strong>טוב:</strong> "תסביר לי על השקעות ברשימה של 5 נקודות, כל נקודה באורך של 50 מילים"</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg border-r-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-times-circle text-red-500 text-xl ml-3"></i>
+                        <h3 class="text-xl font-bold text-red-600">טעות #3: לא לתת הקשר</h3>
+                    </div>
+                    <p class="text-gray-700 mb-2"><strong>רע:</strong> "כתב לי מכתב התפטרות"</p>
+                    <p class="text-gray-700"><strong>טוב:</strong> "כתב מכתב התפטרות מנומס עבור מנהל מכירות שעובד 3 שנים בחברת היי-טק"</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg border-r-4 border-red-500">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-times-circle text-red-500 text-xl ml-3"></i>
+                        <h3 class="text-xl font-bold text-red-600">טעות #4: יותר מדי דרישות בפעם אחת</h3>
+                    </div>
+                    <p class="text-gray-700 mb-2"><strong>רע:</strong> "תכתב לי תוכנית עסקית ואתר ולוגו ואסטרטגיית שיווק"</p>
+                    <p class="text-gray-700"><strong>טוב:</strong> "בואו נתחיל בתוכנית עסקית. תכין מתווה בן 5 עמודים..."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Resources Section -->
+    <section class="py-16 px-4 additional-resources">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <i class="fas fa-external-link-alt text-4xl text-blue-300 mb-4"></i>
+                <h2 class="text-3xl font-bold text-white mb-4">עוד היבטים באותו נושא</h2>
+                <p class="text-xl text-gray-300">שלנצי הכין עבורכם:</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="https://prompt12.netlify.app/" target="_blank" 
+                   class="resource-link bg-white bg-opacity-10 rounded-xl p-6 block hover:bg-opacity-20 transition-all duration-300">
+                    <div class="text-center">
+                        <i class="fas fa-book-open text-3xl text-blue-300 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">מדריך הפרומפטים המתקדם</h3>
+                        <p class="text-gray-300 text-sm">טכניקות מתקדמות ודוגמאות נוספות לכתיבת פרומפטים מקצועיים</p>
+                        <div class="mt-4 inline-flex items-center text-blue-300">
+                            <span class="ml-2">לחץ לכניסה</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://app.base44.com/apps/685bd639e3f033f6992891a2/editor/preview/PromptGuide" target="_blank" 
+                   class="resource-link bg-white bg-opacity-10 rounded-xl p-6 block hover:bg-opacity-20 transition-all duration-300">
+                    <div class="text-center">
+                        <i class="fas fa-tools text-3xl text-green-300 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">כלי עבודה אינטראקטיבי</h3>
+                        <p class="text-gray-300 text-sm">פלטפורמה מתקדמת לבניית ובדיקת פרומפטים בזמן אמת</p>
+                        <div class="mt-4 inline-flex items-center text-green-300">
+                            <span class="ml-2">לחץ לכניסה</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://v0-interactive-landing-page-nine.vercel.app/" target="_blank" 
+                   class="resource-link bg-white bg-opacity-10 rounded-xl p-6 block hover:bg-opacity-20 transition-all duration-300">
+                    <div class="text-center">
+                        <i class="fas fa-rocket text-3xl text-purple-300 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">דף נחיתה אינטראקטיבי</h3>
+                        <p class="text-gray-300 text-sm">חוויה אינטראקטיבית מתקדמת לחקר עולם הפרומפטים</p>
+                        <div class="mt-4 inline-flex items-center text-purple-300">
+                            <span class="ml-2">לחץ לכניסה</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <footer class="gradient-bg text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">מוכן להפוך למאסטר פרומפטים?</h2>
+            <p class="text-xl mb-8 opacity-90">עכשיו יש לך את כל הכלים לכתיבת פרומפטים שיהפכו את ה-AI לנשק הסודי שלך</p>
+            
+            <div class="bg-white bg-opacity-10 rounded-2xl p-8 mb-8">
+                <h3 class="text-2xl font-bold mb-4">תזכורת: הנוסחה הזהב</h3>
+                <div class="text-lg">
+                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">תפקיד</span> +
+                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">הקשר</span> +
+                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">משימה</span> +
+                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">פורמט</span> +
+                    <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full mx-1">דוגמאות</span>
+                    = <span class="text-yellow-300 font-bold">הצלחה מובטחת!</span>
+                </div>
+            </div>
+            
+            <div class="text-lg opacity-90">
+                <p class="mb-4">
+                    <i class="fas fa-star text-yellow-300 ml-2"></i>
+                    התחל לתרגל עם הטכניקות שלמדת היום
+                </p>
+                <p class="mb-4">
+                    <i class="fas fa-rocket text-yellow-300 ml-2"></i>
+                    נסה את הפרומפט הקסום לפתרון בעיות
+                </p>
+                <p>
+                    <i class="fas fa-trophy text-yellow-300 ml-2"></i>
+                    תהפוך למומחה תוך שבועיים!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Copy prompt functionality
+        function copyPrompt() {
+            const promptText = document.getElementById('magic-prompt').innerText;
+            navigator.clipboard.writeText(promptText).then(function() {
+                const btn = event.target;
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check ml-1"></i>הועתק!';
+                btn.classList.add('copy-success');
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('copy-success');
+                }, 2000);
+            });
+        }
+
+        // Demo chat functionality
+        const responses = {
+            'עובד חדש לא מתקדם מהר מספיק': [
+                'אני מבין שיש לך בעיה עם עובד חדש. בואו נבין את המצב לעומק:',
+                '• כמה זמן העובד עובד אצלכם?',
+                '• מה התחומים הספציפיים בהם הוא לא מתקדם מהר מספיק?',
+                '• מה הציפיות שלך לגבי זמני למידה?',
+                '• איך אתה מודד את ההתקדמות שלו?',
+                '• האם קיבל הדרכה מתאימה והכשרה?',
+                '• האם יש לו ניסיון קודם בתחום?'
+            ],
+            'לקוחות מתלונים על זמני המתנה': [
+                'זו בעיה חשובה שצריכה טיפול מיידי. בואו נברר את הפרטים:',
+                '• מה זמני ההמתנה הממוצעים כרגע?',
+                '• באלו שעות/ימים הבעיה הכי חמורה?',
+                '• כמה איש צוות משרת לקוחות?',
+                '• מה הגורמים העיקריים לעיכובים?',
+                '• האם יש מערכת תור או קבלת פניות?',
+                '• מה הציפיות של הלקוחות לזמני המתנה?'
+            ]
+        };
+
+        function sendMessage() {
+            const input = document.getElementById('user-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            const chatContainer = document.getElementById('chat-container');
+            
+            // Add user message
+            const userMessage = document.createElement('div');
+            userMessage.className = 'flex items-start space-x-3 space-x-reverse chat-message';
+            userMessage.innerHTML = `
+                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-user text-white text-sm"></i>
+                </div>
+                <div class="bg-green-100 p-3 rounded-lg max-w-md">
+                    <p class="text-sm">${message}</p>
+                </div>
+            `;
+            chatContainer.appendChild(userMessage);
+
+            input.value = '';
+
+            // Add AI response after delay
+            setTimeout(() => {
+                const aiMessage = document.createElement('div');
+                aiMessage.className = 'flex items-start space-x-3 space-x-reverse chat-message';
+                
+                let responseText = 'תודה על השאלה! בואו נתחיל בהבנת הבעיה לעומק. אוכל לשאול כמה שאלות מבהירות כדי לעזור לך טוב יותר?';
+                
+                // Check for predefined responses
+                for (let key in responses) {
+                    if (message.includes(key) || message.includes(key.split(' ')[0])) {
+                        responseText = responses[key].join('<br>');
+                        break;
+                    }
+                }
+
+                aiMessage.innerHTML = `
+                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-robot text-white text-sm"></i>
+                    </div>
+                    <div class="bg-blue-100 p-3 rounded-lg max-w-md">
+                        <p class="text-sm">${responseText}</p>
+                    </div>
+                `;
+                chatContainer.appendChild(aiMessage);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }, 1000);
+
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function quickDemo(problem) {
+            document.getElementById('user-input').value = problem;
+            sendMessage();
+        }
+
+        // Enter key support for chat
+        document.getElementById('user-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all hover-scale elements for animation
+        document.querySelectorAll('.hover-scale').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
